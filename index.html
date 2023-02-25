@@ -34,12 +34,37 @@
         </div>
       </section>
       <!--* Meals Container -->
-      <section class="container">
+      <section class="container mb-5">
         <div
           id="meals-container"
           class="row row-cols-1 row-cols-md-3 g-4"
         ></div>
       </section>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="mealDetails"
+        tabindex="-1"
+        aria-labelledby="mealDetailsLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="mealDetailsLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div id="mealDetailsBody" class="modal-body"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <!--* scripts -->
     <script src="js/meals.js"></script>
